@@ -36,13 +36,13 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="#announcements" onclick="bootpage.show('announcements-page', updateActiveTab)">Announcements</a></li>
-                <li><a href="#labs" onclick="bootpage.show('labs-page', updateActiveTab)">Labs</a></li>
-                <li><a href="#additional-materials" onclick="bootpage.show('additional-materials-page', updateActiveTab)">Additional Materials</a></li>
-                <li><a href="#textbook" onclick="bootpage.show('textbook-page', updateActiveTab)">Textbook</a></li>
-                <li><a href="#lectures" onclick="bootpage.show('lectures-page', updateActiveTab)">Lectures</a></li>
-                <li><a href="#attendance" onclick="bootpage.show('attendance-page', updateActiveTab)">Attendance</a></li>
-                <li><a href="#excellence-projects" onclick="bootpage.show('excellence-projects-page', updateActiveTab)">Excellence Projects</a></li>
+                <li id="announcements-navigation"><a href="#announcements" onclick="bootpage.show('announcements-page', updateActiveNavigation)">Announcements</a></li>
+                <li id="textbook-navigation"><a href="#textbook" onclick="bootpage.show('textbook-page', updateActiveNavigation)">Textbook</a></li>
+                <li id="lectures-navigation"><a href="#lectures" onclick="bootpage.show('lectures-page', updateActiveNavigation)">Lectures</a></li>
+                <li id="additional-materials-navigation"><a href="#additional-materials" onclick="bootpage.show('additional-materials-page', updateActiveNavigation)">Additional Materials</a></li>
+                <li id="labs-navigation"><a href="#labs" onclick="bootpage.show('labs-page', updateActiveNavigation)">Labs</a></li>
+                <li id="excellence-projects-navigation"><a href="#excellence-projects" onclick="bootpage.show('excellence-projects-page', updateActiveNavigation)">Excellence Projects</a></li>
+                <li id="attendance-navigation"><a href="#attendance" onclick="bootpage.show('attendance-page', updateActiveNavigation)">Attendance</a></li>
             </ul>
         </div>
     </nav>
