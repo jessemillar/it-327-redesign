@@ -2,3 +2,8 @@
     background-color: #001f3f;
     color           : #ffffff;
 }
+
+.navbar {
+    border-radius: 0;
+    border       : none;
+}

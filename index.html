@@ -21,38 +21,42 @@
     <div class="container-fluid">
         <div id="page-header" class="row">
             <div class="col-md-12">
-                <h2>IT 327: Digital Communications Instructor: Barry Lunt</h2>
+                <h2>IT 327: Digital Communications</h2>
             </div>
         </div>
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Announcements</a></li>
-                        <li><a href="#">Labs</a></li>
-                        <li><a href="#">Additional Materials</a></li>
-                        <li><a href="#">Textbook</a></li>
-                        <li><a href="#">Lectures</a></li>
-                        <li><a href="#">Attendance</a></li>
-                        <li><a href="#">Excellence Projects</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Page divs are populated and made visible via JavaScript -->
+    </div>
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="#announcements" onclick="bootpage.show('announcements-page', updateActiveTab)">Announcements</a></li>
+                <li><a href="#labs" onclick="bootpage.show('labs-page', updateActiveTab)">Labs</a></li>
+                <li><a href="#additional-materials" onclick="bootpage.show('additional-materials-page', updateActiveTab)">Additional Materials</a></li>
+                <li><a href="#textbook" onclick="bootpage.show('textbook-page', updateActiveTab)">Textbook</a></li>
+                <li><a href="#lectures" onclick="bootpage.show('lectures-page', updateActiveTab)">Lectures</a></li>
+                <li><a href="#attendance" onclick="bootpage.show('attendance-page', updateActiveTab)">Attendance</a></li>
+                <li><a href="#excellence-projects" onclick="bootpage.show('excellence-projects-page', updateActiveTab)">Excellence Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Page divs are populated and made visible via JavaScript -->
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
                 <div id="announcements-page" style="display: none"></div>
+                <div id="labs-page" style="display: none"></div>
+                <div id="additional-materials-page" style="display: none"></div>
+                <div id="textbook-page" style="display: none"></div>
+                <div id="lectures-page" style="display: none"></div>
+                <div id="attendance-page" style="display: none"></div>
+                <div id="excellence-projects-page" style="display: none"></div>
             </div>
         </div>
     </div>
