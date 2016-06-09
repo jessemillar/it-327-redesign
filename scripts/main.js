@@ -1,3 +1,13 @@
+$(document).on('click', '.navbar-collapse.in', function(event) {
+    if ($(event.target).is('a') && $(event.target).attr('class') != 'dropdown-toggle') {
+        $(this).collapse('hide');
+    }
+});
+
+$(window).bind('hashchange', function(event) { // Watch for hash changes and react accordingly
+    showHash(); // Show the proper page and update the navigation
+});
+
 function init() {
     // Load in the page "templates" to the correct divs
     $("#additional-materials-page").load("pages/additional-materials/index.html");
@@ -8,13 +18,17 @@ function init() {
     $("#lectures-page").load("pages/lectures/index.html");
     $("#textbook-page").load("pages/textbook/index.html");
 
-    if (window.location.hash) { // If we're refreshing a page or opening a bookmark, open the proper tab
-        var hashPage = window.location.hash.substring(1, window.location.hash.length);
-
-        bootpage.show(hashPage + "-page", updateActiveNavigation);
+    if (window.location.hash.length) { // If we're refreshing a page or opening a bookmark, open the proper tab
+        showHash();
     } else {
         bootpage.show("announcements-page", updateActiveNavigation);
     }
+}
+
+function showHash() {
+    var hashPage = window.location.hash.substring(1, window.location.hash.length);
+
+    bootpage.show(hashPage + "-page", updateActiveNavigation);
 }
 
 function updateActiveNavigation() {
